@@ -1,0 +1,467 @@
+@import "reset.css";
+html {
+  font-size: 100px;
+}
+body * {
+  font-size: .14rem;
+}
+.fr {
+  float: right;
+}
+.zoomTo10px {
+  font-size: 10px;
+  -webkit-transform: scale(0.8);
+}
+.white {
+  color: #fff;
+  font-size: 12px;
+}
+.mrtb {
+  margin: 8px 0;
+}
+.brr0 {
+  border-right: none!important;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.Page .header > nav {
+  background: #000;
+  color: #fff;
+  margin-bottom: 0;
+}
+.Page .header > nav li.on:after,
+.Page .header > nav li:hover:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  left: 50%;
+  border: 8px solid;
+  border-color: #000  #000 #fff #000;
+  margin-left: -10px;
+  margin-bottom: -1px;
+}
+.Page .header .navbar-menu {
+  float: left;
+  margin-left: 15px;
+}
+.Page .header .navbar-logo {
+  display: flex;
+  padding: 10px;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  align-items: center;
+}
+.Page .header .navbar-logo img {
+  display: inline-block;
+  height: 100%;
+  margin-right: 20px;
+}
+.Page .header .navbar-phone {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+}
+.Page .header .navbar-toggle {
+  z-index: 999;
+}
+.Page .header .navbar-user {
+  position: absolute;
+  right: 0;
+  color: #fff;
+  font-size: 22px;
+}
+.Page .cont {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px ;
+  padding-bottom: 60px ;
+  overflow: hidden;
+}
+.Page .cont .banner-box .item img {
+  width: 100%;
+  display: block;
+}
+.Page .cont .carousel-control > span {
+  position: absolute;
+  top: 50%;
+  width: 38px;
+  height: 38px;
+  margin-top: -19px;
+  z-index: 2;
+  background-color: #000;
+  opacity: 0.2;
+  border-radius: 50%;
+  line-height: 38px;
+}
+.Page .cont .cont-list h4 {
+  text-align: center;
+  font-size: 16.8px;
+  color: #000000;
+  padding: 16px 0;
+}
+.Page .cont .cont-list h2 {
+  padding: 0 5px;
+  font-size: 16.8px;
+  font-weight: bold;
+  color: #000;
+}
+.Page .cont .cont-list h2 small {
+  padding-left: 10px;
+}
+@media all and (max-width: 375px) {
+  .Page .cont .cont-list {
+    padding: 0 2px;
+    box-sizing: border-box;
+  }
+}
+.Page .cont .spaces-nav {
+  padding: 14px 0;
+}
+.Page .cont .spaces-nav .spaces-nav-bar {
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+}
+.Page .cont .spaces-nav .spaces-nav-bar > a {
+  width: 50px;
+  position: relative;
+  float: left;
+  margin-left: 50px;
+}
+.Page .cont .spaces-nav .spaces-nav-bar > a:first-child {
+  margin-left: 0;
+}
+.Page .cont .spaces-nav .spaces-nav-bar > a img {
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+.Page .cont .spaces-nav .spaces-nav-bar > a span {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  line-height: 22px;
+}
+@media all and (max-width: 425px) {
+  .Page .cont .spaces-nav .spaces-nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+  .Page .cont .spaces-nav .spaces-nav-bar > a {
+    width: 25%;
+    margin-left: 0;
+    margin-bottom: 10px;
+    border-right: 1px solid #ccc;
+  }
+  .Page .cont .spaces-nav .spaces-nav-bar > a img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 27px!important;
+  }
+}
+.Page .cont .cont-list > h2 {
+  margin: 15px 0;
+}
+.Page .cont .list-info {
+  width: 100%;
+  margin: 0 auto;
+}
+.Page .cont .list-info > div {
+  margin-bottom: 10px;
+  padding: 0 5px;
+}
+.Page .cont .list-info > div > a {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.Page .cont .list-info > div > a img {
+  display: block;
+  width: 100%;
+}
+.Page .cont .clickMore {
+  width: 100%;
+  margin-top: 20px;
+}
+.Page .cont .clickMore > a {
+  display: block;
+  width: 120px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  padding: 10px 8px;
+  background: #000;
+  color: #fff;
+  line-height: 1;
+  text-align: center;
+}
+.Page .shop-bar .shop-nav-wrap {
+  border-bottom: 1px solid #e9e9e9;
+  margin-bottom: 20px;
+}
+.Page .shop-bar .shop-nav {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+.Page .shop-bar .nav1 {
+  height: 40px;
+  line-height: 40px;
+}
+.Page .shop-bar .nav1 > a {
+  padding: 0 30px;
+}
+.Page .shop-bar .nav1 > a.all {
+  font-weight: bold;
+}
+.Page .shop-bar .shop-nav {
+  max-width: 960px;
+  width: 100%;
+  marign: 0 auto;
+}
+.Page .shop-bar .shop-nav > div {
+  padding-left: 30px;
+  height: 40px;
+  line-height: 40px;
+}
+.Page .shop-bar .shop-nav > div strong {
+  padding-right: 20px;
+  font-weight: bold;
+}
+.Page .shop-bar .shop-nav > div > span {
+  padding: 0 10px;
+  font-size: 12px;
+}
+.Page .shop-bar .shop-nav > div > span.all {
+  font-weight: bold;
+}
+.Page .shop-bar .shop-nav.small-menu {
+  margin-bottom: 20px;
+}
+.Page .blog-left .blog-item {
+  max-width: 660px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-radius: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.Page .blog-right dl {
+  margin-bottom: 20px;
+}
+.Page .blog-right dl > dt {
+  position: relative;
+  line-height: 37px;
+  padding-left: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.Page .blog-right dl > dt:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+  width: 4px;
+  height: 20px;
+  background: #444;
+}
+.Page .blog-right dl dd {
+  padding-top: 10px;
+}
+.Page .blog-right dl dd > a {
+  display: block;
+  float: left;
+  padding: 3px 8px;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 0 8px 5px 0;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px 0 rgba(193, 204, 215, 0.3);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.Page .blog-right dl dd > ul li {
+  padding: 5px 0;
+  list-style: none;
+}
+.Page .blog-right dl dd > img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+.Page .blog-right.navbar-fixed-right {
+  position: fixed;
+  right: 0;
+  top: 50px;
+}
+.Page .footer {
+  width: 100%;
+  background: #000;
+  padding: 50px 0;
+  overflow: hidden;
+  color: #fff;
+}
+.Page .footer > div {
+  border-right: 1px solid #fff;
+  height: 90px;
+}
+.Page .footer > div:last-child {
+  border: 0;
+}
+.Page .footer > div .aboutMe {
+  display: flex;
+  justify-content: space-between;
+}
+.Page .footer > div .aboutMe > a {
+  display: inline-block;
+  flex: 1;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.Page .footer > div > span {
+  display: block;
+  margin-bottom: 10px;
+}
+@media all and (max-width: 377px) {
+  .Page .footer {
+    width: 100%;
+    height: 87px;
+    background: #9e9e9e;
+    padding: 20px 0 0 0;
+  }
+}
+.eclipse {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 10;
+  transition: background-color 0.3s linear;
+  background-color: rgba(0, 0, 0, 0.5);
+  will-change: background-color;
+  filter: blur(10px);
+}
+.loginBox {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50%;
+  height: 320px;
+  padding: 40px 20px;
+  border: 4px solid #000;
+  background: #fff;
+  z-index: 999;
+}
+.loginBox:after {
+  content: "OR";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 20px;
+}
+.loginBox .left {
+  position: relative;
+  float: left;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+.loginBox .left > img {
+  width: 122px;
+  display: block;
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.loginBox .right {
+  position: relative;
+  float: right;
+}
+.loginBox .right .group {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  padding: 0 80px 0 0;
+  margin-bottom: 20px;
+}
+.loginBox .right .group > input {
+  outline: 0 none;
+  border: 0 none;
+  padding: 6px;
+}
+.loginBox .right .group > span {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  font-size: 14px;
+  color: #f00;
+}
+.loginBox .right .passUser p {
+  margin: 12px 0;
+}
+.loginBox .right .passUser p > a {
+  color: #444;
+}
+.loginBox .right .passUser #btn {
+  width: 100%;
+  border: 0;
+  background: #000;
+  line-height: 44px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: #fff;
+}
+@media all and (max-width: 375px) {
+  .eclipse {
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+  }
+  .loginBox {
+    z-index: 1001;
+    border: 0;
+    background-color: transparent;
+    width: 90%;
+    margin-left: 5%;
+    padding: 0;
+  }
+  .loginBox .right {
+    width: 100%;
+  }
+  .loginBox .right .group input {
+    background-color: transparent;
+  }
+  .loginBox:after {
+    content: " ";
+  }
+}

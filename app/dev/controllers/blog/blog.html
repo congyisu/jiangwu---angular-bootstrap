@@ -1,0 +1,57 @@
+<div class="row">
+	<div class="blog-left col-md-9 col-xs-12">
+		<div ng-repeat="item in data" class="blog-item">
+			<div ng-bind-html="item.content | toTurnHtml"></div>
+			<img ng-src="{{item.thumb}}-article" alt="">
+		</div>
+	</div>
+	<div class="blog-right col-md-3 hidden-xs navbar-fixed-right">
+		<dl class="clearfix"><dt>分类</dt><dd>
+		
+     	 <a href="/blog">全部</a>
+      	 <a href="/blog/t/1"> 居住榜样 </a>
+          
+          
+            <a href="/blog/t/2">
+              最趣DIY
+            </a>
+          
+          
+            <a href="/blog/t/3">
+              创意设计
+            </a>
+          
+          
+            <a href="/blog/t/4">
+              生活方式
+            </a>
+          
+          
+            <a href="/blog/t/5">
+              艺术部落
+            </a>
+          
+          
+            <a href="/blog/t/6">
+              独立设计
+            </a>
+          
+          
+            <a href="/blog/t/7">
+              关于匠物
+            </a>
+        </dd></dl>
+        <dl class="clearfix"><dt>最新</dt><dd>
+	        <ul>
+	          <li><a href="/blog/62">9种轻戳方式 | 打开圣诞指尖狂欢</a></li>
+	          <li><a href="/blog/61">零点：猜中价格就抱走“匠物”｜双11王牌竞价</a></li>
+	          <li><a href="/blog/60">硬汉大董｜和他用枪拼出来的硬茧空间</a></li>
+	          <li><a href="/blog/59">白色在这里开了个party｜好白商店</a></li>
+	          <li><a href="/blog/58">蒋公留下最令人咋舌的东西终于揭晓——美龄宫</a></li>
+	        </ul>
+        </dd></dl>
+        <dl class="clearfix"><dt>公众号</dt>
+			<dd><img src="http://assets.jiangwoo.com/wechat.png" alt=""></dd>
+        </dl>
+	</div>
+</div>

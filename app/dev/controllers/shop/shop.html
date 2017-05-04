@@ -1,0 +1,41 @@
+
+    <div class="shop-bar">
+        <div class="shop-nav-wrap hidden-xs">
+              <div class="shop-nav">  
+                  <nav class="nav1">
+                        <a href="javascript:;" class="all">全部</a>
+                        <a href="javascript:;">会客</a>
+                        <a href="javascript:;">工作</a>
+                        <a href="javascript:;">户外</a>
+                        <a href="javascript:;">儿童</a>
+                        <a href="javascript:;">收纳</a>
+                        <a href="javascript:;">装饰</a>
+                        <a href="javascript:;">起居</a>
+                        <a href="javascript:;">餐饮</a>
+                  </nav>
+              </div> 
+        </div> 
+        <div class="shop-nav-wrap small-menu  hidden-xs">    
+          <div class="shop-nav">
+            <div><strong>功能</strong>| <span>灯具</span><span>文具</span><span>沙发</span><span>床</span><span>桌几</span><span>座椅</span><span>柜架</span><span>器皿</span><span>钟表</span><span>纺织品</span><span>厨具</span></div>
+             <div><strong>材质</strong>| <span>竹</span><span>水泥</span><span>黄铜</span><span>实木贴皮</span><span>桌几</span><span>座椅</span><span>柜架</span><span>器皿</span><span>钟表</span><span>纺织品</span><span>厨具</span></div>
+          </div> 
+        </div> 
+        <div class=""></div>
+    </div>
+    <div class="cont-list">
+        <div class="list-info row" on-dropdown infiniter-load="loadList.load()" infiniter-flg="loadList.flg">
+            <div class="col-md-3 col-sm-6 col-xs-6" ng-repeat="item in shopData | orderBy: item.id ">
+                <a href="javascript:;">
+                    <img ng-src="{{item.thumb}}-{{{'none':'thumb','limited':'limited','hot':'hot','new':'new'}[item.display_tag]}}?1">
+                </a>
+                <p>{{item.title}}</p>
+                <p><span class="price">{{item.price | currency:"￥"}}</span></p>
+                <hr/>
+                <p>{{item.one_liner}}</p>
+            </div>
+        </div>
+        <div class="clickMore">
+            <a href="javascript:;">查看更多</a>
+        </div>
+    </div>

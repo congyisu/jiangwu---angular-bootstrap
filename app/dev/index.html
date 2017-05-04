@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="jiangwoo">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>匠物 | 现代设计，传统工艺，商业空间设计，家具定制</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="public/css/bootstrap.min.css">
+	<link rel="stylesheet" href="public/css/index.css">
+</head>
+<body>
+	<div class="Page" ng-controller="pageCtrl">
+		<jw-header></jw-header>
+		<div ui-view class="cont"></div>
+		<jw-footer></jw-footer>
+	</div>
+	<script src="./lib/angular.min.js"></script>
+	<script src="./lib/angular-ui-router.min.js"></script>
+	<script src="./lib/jquery.min.js"></script>
+	<script src="./lib/bootstrap.min.js"></script>
+
+	<!--入口JS{-->
+	<script src="./index.js"></script>
+	<script src="./config/router_config.js"></script>
+	<script src="./filter/fiterHtml.js"></script>
+	<!--}-->
+
+	<!--装饰型组件{-->
+	<script src="./decorator/dropMore.js"></script>
+	<script src="./decorator/loginuser.js"></script> 
+	<!--}-->
+
+	<!--组件{-->
+	<script src="./components/header/header_dir.js"></script> 
+	<script src="./components/footer/footer_dir.js"></script> 
+	<!--}-->
+
+	<!--Page{-->
+	<script src="./controllers/products/products_ctrl.js"></script>
+	<script src="./controllers/shop/shop_ctrl.js"></script>
+	<script src="./controllers/spaces/spaces_ctrl.js"></script>
+	<script src="./controllers/blog/blog_ctrl.js"></script>
+	<script src="./controllers/users/users_ctrl.js"></script>
+	<!--}-->
+</body>
+</html>

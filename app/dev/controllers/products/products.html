@@ -1,0 +1,82 @@
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner banner-box" role="listbox">
+            <div class="item active">
+                <img src="https://assets.jiangwoo.com/uploads%2Fc342405445a5f8781d5a8dcb4d05d9e3-WechatIMG21.jpeg" alt="...">
+            </div>
+            <div class="item">
+                <img src="https://assets.jiangwoo.com/uploads%2Fe6c5e619891ef489a90eb682046b5e54-___.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img src="https://assets.jiangwoo.com/uploads%2F84be72966a623a8353e682f39196dcf1-WechatIMG22.jpeg" alt="...">
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control hidden-xs" href="#carousel-example-generic" role="button" data-slide="prev" style="background-image: none">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control hidden-xs" href="#carousel-example-generic" role="button" data-slide="next" style="background-image: none">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="cont-list" style="height:1000px;">
+        <h4 class="text-center">日常生活里的仪式感</h4>
+        <h2 class="text-left">新品首发 <small>甄选限量定制款手工匠作</small></h2>
+        <div class="list-info row"+>
+           <!--  <div class="col-md-3 col-sm-6 col-xs-6">
+                <a href="javascript:;">
+                    <img src="http://assets.jiangwoo.com/uploads%2F74a326497e4fe3c5c7e0adf5a6195c38_500_500.jpg-new?1" alt="">
+                </a>
+                <p>可爱浴缸造型厨房餐具</p>
+                <hr/>
+                <p>餐具也可以很"甜蜜"</p>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <a href="javascript:;">
+                    <img src="http://assets.jiangwoo.com/uploads%2F74a326497e4fe3c5c7e0adf5a6195c38_500_500.jpg-new?1" alt="">
+                </a>
+                <p>可爱浴缸造型厨房餐具</p>
+                <hr/>
+                <p>餐具也可以很"甜蜜"</p>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <a href="javascript:;">
+                    <img src="http://assets.jiangwoo.com/uploads%2F74a326497e4fe3c5c7e0adf5a6195c38_500_500.jpg-new?1" alt="">
+                </a>
+                <p>可爱浴缸造型厨房餐具</p>
+                <hr/>
+                <p>餐具也可以很"甜蜜"</p>
+            </div>
+              <div class="col-md-3 col-sm-6 col-xs-6">
+                <a href="javascript:;">
+                    <img src="http://assets.jiangwoo.com/uploads%2F74a326497e4fe3c5c7e0adf5a6195c38_500_500.jpg-new?1" alt="">
+                </a>
+                <p>可爱浴缸造型厨房餐具</p>
+                <hr/>
+                <p>餐具也可以很"甜蜜"</p>
+            </div> -->
+            <div class="col-md-3 col-sm-6 col-xs-6" ng-repeat="item in data | orderBy: item.id ">
+                <a href="javascript:;">
+                    <img ng-src="{{item.thumb}}-{{item.display_tag =='none'? 'thumb':item.display_tag}}?1">
+                </a>
+                <p>{{item.title}}</p>
+                <p><span class="price">{{item.price | currency:"￥"}}</span></p>
+                <hr/>
+                <p>{{item.one_liner}}</p>
+            </div>
+        </div>
+        <div class="clickMore">
+            <a href="javascript:;" ui-sref="shop" ng-click="goPage()">查看更多</a>
+        </div>
+    </div>
